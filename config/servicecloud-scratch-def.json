@@ -1,0 +1,20 @@
+{
+    "orgName": "LWC Recipes",
+    "edition": "Enterprise",
+    "hasSampleData": true,
+    "features": ["Communities", "ServiceCloud", "LiveAgent", "LightningServiceConsole", "Knowledge"],
+    "settings": {
+        "orgPreferenceSettings": {
+            "s1DesktopEnabled": true,
+            "selfSetPasswordInApi": true,
+            "s1EncryptedStoragePref2": false,
+            "networksEnabled": true
+        },
+        "liveAgentSettings": {
+          "enableLiveAgent": true
+        },
+        "knowledgeSettings": {
+          "enableKnowledge": true
+        }
+    }
+}
