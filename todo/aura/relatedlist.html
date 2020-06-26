@@ -1,0 +1,42 @@
+<div class="slds-m-bottom_small slds-page-header slds-page-header_related-list">
+  <lightning:layout horizontalAlign="spread">
+      <lightning:layoutItem>
+          <lightning:breadcrumbs>
+              <lightning:breadcrumb label="ACCOUNTS" href=""></lightning:breadcrumb>
+              <lightning:breadcrumb label="COMPANY ONE" href=""></lightning:breadcrumb>
+          </lightning:breadcrumbs>
+          <div class="slds-page-header__title slds-text-heading_small">Contacts (will truncate)</div>
+      </lightning:layoutItem>
+      <lightning:layoutItem>
+          <lightning:buttonGroup>
+              <lightning:button class="slds-theme_neutral" variant="neutral" label="Add Contact"></lightning:button>
+          </lightning:buttonGroup>
+      </lightning:layoutItem>
+  </lightning:layout>
+  <lightning:layout horizontalAlign="spread" verticalAlign="center">
+      <lightning:layoutItem>
+          <ul class="slds-list_horizontal slds-has-dividers_left">
+              <li class="slds-item">
+                  <div style="font-size: 0.8125rem;">10 items</div>
+              </li>
+              <li class="slds-item">
+                  <div style="font-size: 0.8125rem;">sorted by name</div>
+              </li>
+          </ul>
+      </lightning:layoutItem>
+      <lightning:layoutItem>
+          <lightning:layout>
+              <lightning:layoutItem>
+                  <lightning:buttonIcon class="slds-m-left_xxx-small" alternativeText="" iconClass="" variant="border-filled" iconName="utility:table"></lightning:buttonIcon>
+              </lightning:layoutItem>
+              <lightning:layoutItem>
+                  <lightning:buttonGroup class="slds-m-left_xxx-small">
+                      <lightning:buttonIcon alternativeText="" iconClass="" variant="border-filled" iconName="utility:chart"></lightning:buttonIcon>
+                      <lightning:buttonIcon alternativeText="" iconClass="" variant="border-filled" iconName="utility:filterList"></lightning:buttonIcon>
+                      <lightning:buttonIcon alternativeText="" iconClass="" variant="border-filled" iconName="utility:sort"></lightning:buttonIcon>
+                  </lightning:buttonGroup>
+              </lightning:layoutItem>
+          </lightning:layout>
+      </lightning:layoutItem>
+  </lightning:layout>
+</div>
