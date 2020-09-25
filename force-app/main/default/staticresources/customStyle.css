@@ -1,0 +1,13 @@
+.card .slds-card__footer {
+  border-top: 0px;
+}
+
+.card .slds-card__header {
+  padding: 0;
+  margin: 0;
+}
+
+.card .slds-card__body {
+  padding: 0;
+  margin: 0;
+}

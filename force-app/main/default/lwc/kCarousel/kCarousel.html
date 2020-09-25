@@ -1,0 +1,50 @@
+<template>
+  <div class="slds-grid slds-wrap slds-gutters_medium container
+  ">
+    <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-3">
+      <lightning-carousel disable-auto-scroll>
+        <template for:each={images} for:item="item">
+          <lightning-carousel-image
+              src={item.src}
+              header={item.header}
+              description={item.description}
+              alternative-text={item.alternative}
+              href={item.href}
+              key={item.id}
+            >
+          </lightning-carousel-image>
+        </template>
+      </lightning-carousel>
+    </div>
+    <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-3">
+      <lightning-carousel disable-auto-scroll>
+        <template for:each={images} for:item="item">
+          <lightning-carousel-image
+              src={item.src}
+              header={item.header}
+              description={item.description}
+              alternative-text={item.alternative}
+              href={item.href}
+              key={item.id}
+            >
+          </lightning-carousel-image>
+        </template>
+      </lightning-carousel>
+    </div>
+    <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-3">
+      <lightning-carousel disable-auto-scroll>
+        <template for:each={images} for:item="item">
+          <lightning-carousel-image
+              src={item.src}
+              header={item.header}
+              description={item.description}
+              alternative-text={item.alternative}
+              href={item.href}
+              key={item.id}
+            >
+          </lightning-carousel-image>
+        </template>
+      </lightning-carousel>
+    </div>
+  </div>
+</template>

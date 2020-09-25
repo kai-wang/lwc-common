@@ -1,0 +1,50 @@
+<template>
+  <nav class="nav" role="navigation">
+    <ul class="nav__list">
+      <lightning-layout multiple-rows="true">
+        <template for:each={navItems} for:item="navItem">
+          <lightning-layout-item flexibility="auto" size=12 large-device-size=3 medium-device-size=6 key={navItem.title}>
+            <li key={navItem.title} class="slds-p-vertical_medium">
+              <label for={navItem.title}>
+                <a
+                  href="#"
+                  title={navItem.title}
+                  data-item={navItem.value}
+                  onclick={handleNavItemClick}
+                >
+                  {navItem.title}
+                </a>
+              </label>
+            </li>
+          </lightning-layout-item>
+        </template>
+      </lightning-layout>
+    </ul>
+  </nav>
+  <!--
+  <nav class="nav" role="navigation">
+      <ul class="nav__list">
+          <template for:each={navItems} for:item="navItem">
+              <li key={navItem.title}>
+                  <input
+                      id={navItem.title}
+                      type="checkbox"
+                      checked=""
+                      hidden=""
+                  />
+                  <label for={navItem.title}>
+                      <a
+                          href="#"
+                          title={navItem.title}
+                          data-item={navItem.value}
+                          onclick={handleNavItemClick}
+                      >
+                          {navItem.title}
+                      </a>
+                  </label>
+              </li>
+          </template>
+      </ul>
+  </nav>
+-->
+</template>

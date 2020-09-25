@@ -1,0 +1,18 @@
+<template>
+  <div class="slds-p-horizontal_small">
+    <template for:each={buttons} for:item="item">
+      <lightning-button-icon 
+        icon-name={item.iconName} 
+        variant={item.variant} 
+        alternative-text={item.alternativeText} 
+        icon-class={item.iconClass} 
+        size={item.size} 
+        key={item.name}
+        data-item={item.name}
+        onclick={handleClick}
+        >
+
+      </lightning-button-icon>
+    </template>
+  </div>
+</template>

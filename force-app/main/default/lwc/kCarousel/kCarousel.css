@@ -1,0 +1,6 @@
+.container {
+}
+
+.container .shape {
+  clip-path: circle(45% at 50% 50%);
+}

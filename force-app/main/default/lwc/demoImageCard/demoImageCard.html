@@ -1,0 +1,13 @@
+<template>
+  <lightning-card>
+    <div class="slds-grid slds-wrap slds-gutters">
+
+      <template for:each={cards} for:item="card">
+          <c-k-image-card card={card} class="slds-col slds-size_1-of-1 slds-medium-size_1-of-3 slds-p-vertical_small" key={card.id}>
+          </c-k-image-card>
+      </template>
+
+    </div>
+  </lightning-card>
+
+</template>

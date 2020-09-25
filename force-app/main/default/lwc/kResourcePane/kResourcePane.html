@@ -1,0 +1,25 @@
+<template>
+  <div class="slds-size_1-of-1 slds-card slds-grid-vertical" style="height:100%">
+    <div class="slds-border_bottom slds-p-vertical_x-large slds-p-horizontal_large">
+      <header class="slds-card__header-title slds-truncate slds-text-heading_medium">
+        Resources
+      </header>
+    </div>
+    <template for:each={items} for:item="item">
+      <div class="slds-p-horizontal_large slds-p-vertical_large" key={item.id}>
+        <div class="slds-grid">
+          <div class="slds-m-right_large">
+            <lightning-icon icon-name={item.icon}></lightning-icon>
+          </div>
+          <div>
+            <h3 class="slds-text-body_regular slds-m-bottom_xx-small">{item.title}</h3>
+            <p class="slds-p-right_large">
+              {item.description}
+            </p>
+            <a class="slds-button slds-button_neutral slds-m-top_medium">{item.buttonLabel}</a>
+          </div>
+        </div>
+      </div>
+    </template>
+  </div>
+</template>

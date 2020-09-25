@@ -1,0 +1,15 @@
+<template>
+  <article class="slds-card slds-grid slds-grid_vertical">
+    <div class="slds-p-around_none slds-m-around_none">
+      <a href={card.image.href}>
+        <img class="slds-container_fluid" src={card.image.src} alt={card.image.alt} width={card.image.width} height={card.image.height} />
+      </a>
+    </div>
+    <footer class="slds-p-around_small">
+      <slot name="footer">
+        <p class="slds-text-heading_medium">{card.title}</p>
+        <p>{card.description}</p>
+      </slot>
+    </footer>
+  </article>
+</template>

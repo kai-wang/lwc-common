@@ -1,0 +1,11 @@
+<template>
+  <nav role="navigation" aria-label="Breadcrumbs">
+    <ol class="slds-breadcrumb slds-list_horizontal slds-wrap">
+      <template iterator:it={trail}>
+        <li class="slds-breadcrumb__item" key={it.value.id} data-id={it.value.id} onclick={handleClick}>
+          <a href={it.value.href}>{it.value.label}</a>
+        </li>        
+      </template>
+    </ol>
+  </nav>
+</template>

@@ -1,17 +1,18 @@
 import BasePrechat from 'lightningsnapin/basePrechat';
 import { api, track } from 'lwc';
-import startChatLabel from '@salesforce/label/c.StartChat';
+//import startChatLabel from '@salesforce/label/c.StartChat';
 
 export default class Prechat extends BasePrechat {
     @api prechatFields;
     @api backgroundImgURL;
     @track fields;
     @track namelist;
-    startChatLabel;
+    //startChatLabel;
 
     /**
      * Set the button label and prepare the prechat fields to be shown in the form.
      */
+    /*
     connectedCallback() {
 
         this.startChatLabel = startChatLabel;
@@ -24,6 +25,7 @@ export default class Prechat extends BasePrechat {
         });
         this.namelist = this.fields.map(field => field.name);
     }
+    */
 
     /**
      * Focus on the first input after this component renders.
@@ -35,6 +37,7 @@ export default class Prechat extends BasePrechat {
     /**
      * On clicking the 'Start Chatting' button, send a chat request.
      */
+    /*
     handleStartChat() {
         this.template.querySelectorAll("lightning-input").forEach(input => {
             this.fields[this.namelist.indexOf(input.name)].value = input.value;
@@ -45,4 +48,5 @@ export default class Prechat extends BasePrechat {
             // Error handling if fields do not pass validation.
         }
     }
+    */
 }

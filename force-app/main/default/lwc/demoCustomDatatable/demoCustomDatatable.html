@@ -1,0 +1,31 @@
+<template>
+  <div style="height: 500px; width: auto">
+    <lightning-button
+      label="Select"
+      onclick={handleSelect}>
+    </lightning-button>
+    <lightning-button
+      label="Trigger error"
+      onclick={triggerError}>
+    </lightning-button>
+
+    <c-k-data-table
+      key-field="id"
+      data={data}
+      columns={columns}
+      column-widths-mode="auto"
+      errors={errors}
+      onheaderaction={handleHeaderAction}
+      onrowaction={handleRowAction}
+      selected-rows={selectedRows}
+      onsave={handleSave}
+      onrowbtnclick={deleteRow}
+      ongroupclick={handleBtnGroupClick}
+      onpicklistchange={handlePicklistChange}
+      onradiochange={handleRadioChange}
+    >
+
+    </c-k-data-table>
+  </div>
+    
+</template>

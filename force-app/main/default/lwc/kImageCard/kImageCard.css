@@ -1,0 +1,19 @@
+/*@import 'c/customStyle';*/
+
+/**/
+:host .slds-card {
+  background-color: var(--lwc-colorBackground);
+  border-radius: var(--lwc-borderRadiusSmall);
+}
+
+
+:host .slds-card__footer {
+  border-top: 0px;
+  margin-top: 0px;
+}
+
+:host .slds-card__header {
+  border-top: 0px;
+  margin-top: 0px; 
+  text-align: center;
+}
