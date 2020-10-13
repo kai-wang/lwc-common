@@ -84,17 +84,15 @@ const columns = [
 
   // Custom Cell Layout
     // Apply css to the cell
-    /*
     { 
       label: 'Balance', 
       fieldName: 'name', 
       type: 'text',  
      // hideDefaultActions: true,
       cellAttributes: {
-        class: 'diet-veg',
+        class: { fieldName: 'dietCSSClass' },
       }
     },
-    */
   /*
   {
     label: '',
@@ -208,7 +206,7 @@ export default class DemoCustomDatatable extends LightningElement {
         "id": "0ebd1957-4b53-4cb2-b8ac-cb89f90b0e4e",
         myIcon: 'utility:checkin',
         myIconPosition: 'left',
-        dietCSSClass: 'diet-veg'
+        dietCSSClass: 'slds-icon-custom-custom9'
     },
     {
         "name": "Jerrold West",
@@ -217,7 +215,8 @@ export default class DemoCustomDatatable extends LightningElement {
         "amount": "964.07",
         "phone": "(384) 837-4830 x371",
         "closeAt": "2020-11-06T12:41:07.913Z",
-        "id": "69127356-ddf4-4875-99a4-6f5ab3ae4e5a"
+        "id": "69127356-ddf4-4875-99a4-6f5ab3ae4e5a",
+        dietCSSClass: 'slds-icon-custom-custom7'
     },
     {
         "name": "Edyth Johnson",
@@ -226,7 +225,8 @@ export default class DemoCustomDatatable extends LightningElement {
         "amount": "756.88",
         "phone": "361.625.3038 x49826",
         "closeAt": "2020-10-26T07:40:55.196Z",
-        "id": "98c00393-281f-44e4-bfa0-f3e4342e7637"
+        "id": "98c00393-281f-44e4-bfa0-f3e4342e7637",
+        dietCSSClass: 'slds-icon-custom-custom79'
     },
     {
         "name": "Ellsworth Wuckert",
@@ -235,7 +235,8 @@ export default class DemoCustomDatatable extends LightningElement {
         "amount": "491.38",
         "phone": "513-369-4300 x95446",
         "closeAt": "2021-06-06T11:44:14.827Z",
-        "id": "acbb5ec5-ba46-47aa-b79c-27727eacde0c"
+        "id": "acbb5ec5-ba46-47aa-b79c-27727eacde0c",
+        dietCSSClass: 'slds-icon-custom-custom102'
     },
     {
         "name": "Joel Jacobs",
@@ -244,7 +245,8 @@ export default class DemoCustomDatatable extends LightningElement {
         "amount": "53.47",
         "phone": "(475) 083-2790 x7034",
         "closeAt": "2020-12-22T13:54:10.431Z",
-        "id": "102af050-f4c8-4c40-ba0b-3b9e97bab9ad"
+        "id": "102af050-f4c8-4c40-ba0b-3b9e97bab9ad",
+        dietCSSClass: 'slds-color__background_gray-7'
     },
     {
         "name": "Jayda Moore",
