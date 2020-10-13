@@ -121,3 +121,7 @@ Prettier and ESLint will now run automatically every time you commit changes. Th
 npm run lint:lwc
 npm run prettier
 ```
+
+## Run fron local
+
+sfdx force:lightning:lwc:start
